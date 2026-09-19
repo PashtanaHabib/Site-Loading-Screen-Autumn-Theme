@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "vazir";
+    src: url(Font/Vazir.eot);
+    src: url(Font/Vazir.eot?#iefix) format("embedded-opentype"),
+    url(Font/Vazir.woff2) format("woff2"),
+    url(Font/Vazir.woff) format("woff"),
+    url(Font/Vazir.ttf) format("truetype");
+}
+
+body{
+    font-family: "vazir" !important;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute !important;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.315);
+}
+.body-cover{
+    position: relative;
+}
