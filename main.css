@@ -1,48 +1,93 @@
-@font-face{
-    font-family: "vazir";
-    src: url(Font/Vazir.eot);
-    src: url(Font/Vazir.eot?#iefix) format("embedded-opentype"),
+@font-face {
+  font-family: "vazir";
+  src: url(Font/Vazir.eot);
+  src:
+    url(Font/Vazir.eot?#iefix) format("embedded-opentype"),
     url(Font/Vazir.woff2) format("woff2"),
     url(Font/Vazir.woff) format("woff"),
     url(Font/Vazir.ttf) format("truetype");
 }
 
-body{
-    font-family: "vazir" !important;
-    background: url(images/background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+body {
+  font-family: "vazir" !important;
+  background: url(images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body::before {
-    content: "";
-    position: absolute !important;
-    inset: 0;
+  content: "";
+  position: absolute !important;
+  inset: 0;
 
-    background: rgba(225, 225, 225, 0.315);
+  background: rgba(225, 225, 225, 0.315);
 }
-.body-cover{
-    position: relative;
-}
-
-.dark body::before{
-     content: "";
-    position: absolute !important;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.562);
-    color: white !important;
-}
-.lh-0{
-    line-height: 0;
+.body-cover {
+  position: relative;
 }
 
-.dark-switch{
-    width: 2.5rem !important;
-    height: 1.5rem !important;
+.dark body::before {
+  content: "";
+  position: absolute !important;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.562);
+  color: white !important;
+}
+.dark .body-cover {
+  color: white !important;
+}
+.lh-0 {
+  line-height: 0;
 }
 
-.dark .t-white{
-    color: white !important;
+.dark-switch {
+  width: 2.5rem !important;
+  height: 1.5rem !important;
+}
+
+.dark .t-white {
+  color: white !important;
+}
+
+.header {
+  padding-top: 90px;
+  color: black;
+}
+.dark .header{
+    color: white;
+}
+
+.spa {
+  color: #be0a00;
+  font-weight: 1000;
+}
+
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
 }
