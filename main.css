@@ -20,8 +20,29 @@ body::before {
     position: absolute !important;
     inset: 0;
 
-    background: rgba(255, 255, 255, 0.315);
+    background: rgba(225, 225, 225, 0.315);
 }
 .body-cover{
     position: relative;
+}
+
+.dark body::before{
+     content: "";
+    position: absolute !important;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.562);
+    color: white !important;
+}
+.lh-0{
+    line-height: 0;
+}
+
+.dark-switch{
+    width: 2.5rem !important;
+    height: 1.5rem !important;
+}
+
+.dark .t-white{
+    color: white !important;
 }
