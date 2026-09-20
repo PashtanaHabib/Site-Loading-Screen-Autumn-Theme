@@ -91,3 +91,25 @@ body::before {
         opacity: 0;
     }
 }
+
+
+.header .countdown div{
+    text-align: center;
+    border: 2px solid #e46c11da;
+    border-radius: 8px;
+    width: 100px;
+    padding: 15px 0;
+    background-color: #e46c1142;
+    margin: 10px 10px;
+}
+@media (max-width : 575px){
+    .header .countdown div{
+    text-align: center;
+    border: 2px solid #e46c11da;
+    border-radius: 8px;
+    width: 80px;
+    padding: 15px 0;
+    background-color: #e46c1142;
+    margin: 10px 8px;
+}
+}
