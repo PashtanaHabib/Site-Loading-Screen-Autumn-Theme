@@ -9,6 +9,7 @@
 }
 
 body {
+    position: relative;
   font-family: "vazir" !important;
   background: url(images/background.jpg) no-repeat;
   background-size: cover;
@@ -18,20 +19,18 @@ body {
 
 body::before {
   content: "";
-  position: absolute !important;
+  position: fixed !important;
   inset: 0;
-
+    z-index: 0;
+  pointer-events: none;
   background: rgba(225, 225, 225, 0.315);
 }
 .body-cover {
   position: relative;
+  z-index: 1;
 }
 
 .dark body::before {
-  content: "";
-  position: absolute !important;
-  inset: 0;
-
   background: rgba(0, 0, 0, 0.562);
   color: white !important;
 }
@@ -112,4 +111,44 @@ body::before {
     background-color: #e46c1142;
     margin: 10px 8px;
 }
+}
+
+
+.header .bt-bro{
+    background-color: #be0a00;
+    border: none;
+    border-radius: 0 5px 5px 0 !important;
+}
+.header .inpu{
+    border-radius: 5px 0 0 5px !important;
+}
+.input-group .form-control:focus {
+    border-color: #be0a00;
+    box-shadow: 0 0 0 5px #be090071;
+}
+.co{
+    color: #be0a00;
+}
+.co:hover{
+    color: #720a05;
+}
+.header .social-link a{
+    font-size: 20px;
+    color: #be0a00;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #be0a00;
+    transition: all 0.3s;
+
+}
+
+.header .social-link a:hover{
+    background-color: white;
+    border-color: #720a05;
 }
