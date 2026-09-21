@@ -11,21 +11,18 @@
       crossorigin="anonymous"
     />
 
-    
-     <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="main.css" />
-
-
   </head>
   <body class="dark-bg">
     <div class="body-cover">
@@ -44,13 +41,21 @@
         <i class="bi bi-brightness-high-fill fs-4 me-2 lh-0 t-white"></i>
       </div>
       <!-- header -->
-       <header class="header mb-5">
+      <header class="header mb-5">
         <div class="container">
           <div class="row text-center">
-            <h2 class="fw-bold mb-4"><span class="spa">Lorem ipsum</span> <span id="text"></span></h2>
-            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit et, corrupti tempora exercitationem</p>
+            <h2 class="fw-bold mb-4">
+              <span class="spa">Lorem ipsum</span> <span id="text"></span>
+            </h2>
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae fugit et, corrupti tempora exercitationem
+            </p>
           </div>
-          <div x-data="countdown" class="row justify-content-center countdown my-5">
+          <div
+            x-data="countdown"
+            class="row justify-content-center countdown my-5"
+          >
             <div>
               <h3 class="fw-bold" x-text="days"></h3>
               <h5 class="mb-0">Days</h5>
@@ -70,74 +75,118 @@
           </div>
           <div class="row justify-content-center text-center">
             <div class="col-12">
-              <h6 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, corporis praesentium voluptatum labore</h6>
+              <h6 class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                corporis praesentium voluptatum labore
+              </h6>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="input-group mb-3">
-                <input type="text" class="form-control inpu">
-              <button class="btn bt-bro" type="button">Buy</button>
+                <input type="text" class="form-control inpu" />
+                <button class="btn bt-bro" type="button">Buy</button>
               </div>
             </div>
             <div class="col-12 social-link mt-5">
-            <a href="index.html"><i class="lh-0 bi bi-twitter"></i></a>
-            <a href="index.html"><i class="lh-0 bi bi-facebook"></i></a>
-            <a href="index.html"><i class="lh-0 bi bi-instagram"></i></a>
-            <a href="index.html"><i class="lh-0 bi bi-linkedin"></i></a>
-          </div>
-          </div>
-          
-
-        </div>
-       </header>
-       <!-- contact -->
-        <section class="contact my-5">
-          <div class="container">
-            <div class="row text-center justify-content-center mb-4">
-              <h2 class="fw-bold">Contact Us</h2>
+              <a href="index.html"><i class="lh-0 bi bi-twitter"></i></a>
+              <a href="index.html"><i class="lh-0 bi bi-facebook"></i></a>
+              <a href="index.html"><i class="lh-0 bi bi-instagram"></i></a>
+              <a href="index.html"><i class="lh-0 bi bi-linkedin"></i></a>
             </div>
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="card">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-geo-alt ms-3"></i>
-                    <div>
+          </div>
+        </div>
+      </header>
+      <!-- contact -->
+      <section class="contact my-5">
+        <div class="container">
+          <div class="row text-center justify-content-center mb-4">
+            <h2 class="fw-bold">Contact Us</h2>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="card">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-geo-alt ms-3"></i>
+                  <div>
                     <h5 class="fw-bold">Address:</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
                   </div>
-                  <div class="d-flex align-items-center my-4">
-                    <i class="bi bi-envelope ms-3"></i>
-                    <div>
+                </div>
+                <div class="d-flex align-items-center my-4">
+                  <i class="bi bi-envelope ms-3"></i>
+                  <div>
                     <h5 class="fw-bold">Email:</h5>
                     <p class="mb-0">pashtanahabib@gmail.com</p>
-                    </div>
                   </div>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-phone ms-3"></i>
-                    <div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-phone ms-3"></i>
+                  <div>
                     <h5 class="fw-bold">Phone:</h5>
                     <p class="mb-0">0789562314</p>
-                    </div>
                   </div>
-                   <div id="map" class="my-4"></div>
                 </div>
+                <div id="map" class="my-4"></div>
               </div>
-              <div class="col-lg-7"></div>
+            </div>
+            <div class="col-lg-7">
+              <form class="card h-100" action="index.html" method="get">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form-lable fw-bold" for="name">Name:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mt-3 mt-md-0">
+                    <label class="form-lable fw-bold" for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <label class="form-lable fw-bold" for="subject"
+                    >Subject:</label
+                  >
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="mt-3">
+                  <label class="form-lable fw-bold" for="messege"
+                    >Messege:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    rows="10"
+                    name="messege"
+                    id=""
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn bta mt-5" type="submit">
+                    Send Messege
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        </div>
+      </section>
     </div>
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -152,76 +201,82 @@
 
     <script src="https://unpkg.com/ityped@1.0.3"></script>
     <script>
-      const textElement = document.querySelector('#text');
-       ityped.init(textElement, { strings: ['dolor sit amet', 'onsectetur adipis ...' ] });
+      const textElement = document.querySelector("#text");
+      ityped.init(textElement, {
+        strings: ["dolor sit amet", "onsectetur adipis ..."],
+      });
     </script>
 
     <script>
       document.addEventListener("alpine:init", () => {
-        Alpine.data("darkmode", () => ({
+        (Alpine.data("darkmode", () => ({
           darkmode: false,
 
           init() {
-            this.darkmode = localStorage.theme === 'dark' ? true : false
+            this.darkmode = localStorage.theme === "dark" ? true : false;
 
-            this.$watch('darkmode', (value) =>{
-              localStorage.theme = value ? 'dark' : 'light'
-            } )
-            }
-            
+            this.$watch("darkmode", (value) => {
+              localStorage.theme = value ? "dark" : "light";
+            });
+          },
         })),
-        Alpine.data("countdown", () => ({
-          days: '00',
-          hours: '00',
-          minutes: '00',
-          seconds: '00',
+          Alpine.data("countdown", () => ({
+            days: "00",
+            hours: "00",
+            minutes: "00",
+            seconds: "00",
 
-          init() {
-            let endDate = new Date(2027, 5, 1).getTime();
+            init() {
+              let endDate = new Date(2027, 5, 1).getTime();
 
-            setInterval(() =>{
-              let nowDate = new Date().getTime();
-              let time = endDate - nowDate;
-              
-              if(time >= 0){
-                this.days = this.format(Math.floor(time / (1000 * 60 * 60 * 24)));
-                this.hours = this.format(Math.floor((time % (1000 * 60 * 60 * 24)) / ( 1000 * 60 * 60)));
-                this.minutes = this.format(Math.floor((time % ( 1000 * 60 * 60)) / (1000 * 60)));
-                this.seconds = this.format(Math.floor((time % (1000 * 60))/ 1000));
-              }
-              
-            }, 1000);
+              setInterval(() => {
+                let nowDate = new Date().getTime();
+                let time = endDate - nowDate;
 
-            
+                if (time >= 0) {
+                  this.days = this.format(
+                    Math.floor(time / (1000 * 60 * 60 * 24)),
+                  );
+                  this.hours = this.format(
+                    Math.floor(
+                      (time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+                    ),
+                  );
+                  this.minutes = this.format(
+                    Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)),
+                  );
+                  this.seconds = this.format(
+                    Math.floor((time % (1000 * 60)) / 1000),
+                  );
+                }
+              }, 1000);
             },
 
             format(num) {
-              return num < 10 ? '0' + num : num;
-            }
-            
-        }))
-      })
+              return num < 10 ? "0" + num : num;
+            },
+          })));
+      });
     </script>
 
-   <script>
-  // Center of Herat
-  const map = L.map('map').setView([34.34817, 62.19967], 13);
+    <script>
+      // Center of Herat
+      const map = L.map("map").setView([34.34817, 62.19967], 13);
 
-  // Map tiles
-  L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    {
-      maxZoom: 19,
-      attribution:
-        'Tiles &copy; Esri'
-    }
-  ).addTo(map);
+      // Map tiles
+      L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        {
+          maxZoom: 19,
+          attribution: "Tiles &copy; Esri",
+        },
+      ).addTo(map);
 
-  // Marker
-  L.marker([34.34817, 62.19967])
-    .addTo(map)
-    .bindPopup('<b>Herat, Afghanistan</b>')
-    .openPopup();
-</script>
+      // Marker
+      L.marker([34.34817, 62.19967])
+        .addTo(map)
+        .bindPopup("<b>Herat, Afghanistan</b>")
+        .openPopup();
+    </script>
   </body>
 </html>

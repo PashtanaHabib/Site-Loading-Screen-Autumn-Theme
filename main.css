@@ -190,3 +190,17 @@ body::before {
   width: 100%;
   height: 400px;
 }
+form .bta{
+  background-color: #be0a00;
+  border: none;
+}
+form .bta:hover{
+  background-color: #720a05 !important;
+}
+form input{
+  height: 50px;
+}
+form .form-control:focus {
+   border-color: #be0a00;
+    box-shadow: 0 0 0 5px #be090071;
+}
